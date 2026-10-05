@@ -5,7 +5,7 @@
 Investigate a successful sign-in from an unusual location and determine whether the activity represents credential compromise or legitimate user behaviour.
 
 ## Environment
-
+| Field | Value |
 |---------|---------|
 | Identity Platform | Microsoft Entra ID |
 | User Account | Alice HR |
