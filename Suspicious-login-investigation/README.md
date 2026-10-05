@@ -10,6 +10,12 @@ Identity Platform: Microsoft Entra ID
 User Account: Alice HR
 VPN : Proton VPN
 
+| Field | Value |
+|---------|---------|
+| Identity Platform | Microsoft Entra ID |
+| User Account | Alice HR |
+| VPN | Proton VPN |
+
 ### Security Controls
 - Multi-Factor Authentication (MFA)
 - Security Groups
