@@ -6,11 +6,6 @@ Investigate a successful sign-in from an unusual location and determine whether 
 
 ## Environment
 
-Identity Platform: Microsoft Entra ID
-User Account: Alice HR
-VPN : Proton VPN
-
-| Field | Value |
 |---------|---------|
 | Identity Platform | Microsoft Entra ID |
 | User Account | Alice HR |
