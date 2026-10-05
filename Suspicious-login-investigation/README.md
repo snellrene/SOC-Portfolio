@@ -23,7 +23,7 @@ The activity was investigated to determine whether it represented a security inc
 
 ## Evidence Collected
 
-<img width="1856" height="110" alt="image" src="https://github.com/user-attachments/assets/a29e4ed5-11d0-41cb-8cba-552be9534733" />
+<img width="1815" height="113" alt="image" src="https://github.com/user-attachments/assets/378e6ac3-97ff-49fa-8076-d2355028a7e6" />
 
 ### Login 1
 
