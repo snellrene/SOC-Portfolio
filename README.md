@@ -21,4 +21,4 @@ Document investigations using professional incident reports
 
 🔐 SOC Projects:
 
-1. Suspicious-login-investigation
+1. https://github.com/snellrene/SOC-Portfolio/tree/main/Suspicious-login-investigation
