@@ -22,3 +22,8 @@ Document investigations using professional incident reports
 🔐 SOC Projects:
 
 1. https://github.com/snellrene/SOC-Portfolio/tree/main/Suspicious-login-investigation
+
+
+🚀 Continuous Learning
+
+This portfolio is continuously updated as I develop my practical cybersecurity and SOC capabilities through hands-on labs, security investigations and technical projects.
