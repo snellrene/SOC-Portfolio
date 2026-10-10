@@ -82,18 +82,18 @@ Changed VirtualBox network settings from NAT to Bridged Adapter to allow direct 
 
 ### 4. Windows Agent Deployment
 
-- Generated a Windows agent deployment package,
-- Installed the Wazuh Agent on Windows 11,
-- Connected the agent to the Wazuh Manager,
+- Generated a Windows agent deployment package
+- Installed the Wazuh Agent on Windows 11
+- Connected the agent to the Wazuh Manager
 - Verified successful enrolment and communication
 
 ### Results:
 Successfully deployed a fully functional SIEM environment.
 
 Validated:
-- Wazuh dashboard accessibility,
-- Agent registration,
-- Endpoint communication,
+- Wazuh dashboard accessibility
+- Agent registration
+- Endpoint communication
 - Security event collection readiness
 
 ### Screenshots
