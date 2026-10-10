@@ -81,19 +81,19 @@ Installed the following components using the official Wazuh installation script:
 Changed VirtualBox network settings from NAT to Bridged Adapter to allow direct access to the Wazuh Dashboard from the host system.
 
 ### 4. Windows Agent Deployment
-Generated a Windows agent deployment package
-Installed the Wazuh Agent on Windows 11
-Connected the agent to the Wazuh Manager
-Verified successful enrolment and communication
+- Generated a Windows agent deployment package
+- Installed the Wazuh Agent on Windows 11
+- Connected the agent to the Wazuh Manager
+- Verified successful enrolment and communication
 
 ### Results:
 Successfully deployed a fully functional SIEM environment.
 
 Validated:
-Wazuh dashboard accessibility
-Agent registration
-Endpoint communication
-Security event collection readiness
+- Wazuh dashboard accessibility
+- Agent registration
+- Endpoint communication
+- Security event collection readiness
 
 ### Screenshots
 <img width="944" height="769" alt="Ubuntu   Wazuh installed" src="https://github.com/user-attachments/assets/c80610a7-c716-4338-aa51-e6d595ce3767" />
