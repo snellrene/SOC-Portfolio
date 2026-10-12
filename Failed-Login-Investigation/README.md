@@ -164,8 +164,14 @@ The activity was generated intentionally during testing.
 
 ## Screenshots
 
-### Dashboard Overview
+<img width="658" height="898" alt="image" src="https://github.com/user-attachments/assets/94713ae1-49a0-4161-985e-aafb07844f43" />
 
-Screenshots
+<img width="655" height="880" alt="image" src="https://github.com/user-attachments/assets/4ec3de15-10da-472d-bdf3-856bd49e7aac" />
+
+### Detailed Investigation Report:
+
+[Wazuh - Login_Alerts.pdf](https://github.com/user-attachments/files/33315973/Wazuh.-.Login_Alerts.pdf)
+
+[Wazuh - Threat Hunting Report.pdf](https://github.com/user-attachments/files/33315975/Wazuh.-.Threat.Hunting.Report.pdf)
 
 
