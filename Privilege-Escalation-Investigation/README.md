@@ -1,8 +1,9 @@
 # Privilege Escalation Investigation
 
 ## Overview
-This project demonstrates the detection and investigation of a privilege escalation scenario using Wazuh SIEM.
-The objective was to create a local user account, add that account to the local Administrators group, analyse the resulting security alerts, and assess the potential security impact.
+This project demonstrates the detection, investigation, containment, and remediation of a privilege escalation event using Wazuh SIEM.
+
+The objective was to simulate a common attacker technique by creating a local user account and granting administrative privileges. The resulting security events were detected by Wazuh, investigated through Threat Hunting, assessed for risk, and remediated using standard security response procedures.
 
 ## Objectives
 - Generate a privilege escalation event
@@ -11,6 +12,8 @@ The objective was to create a local user account, add that account to the local 
 - Investigate alerts using Wazuh SIEM
 - Perform risk assessment
 - Document findings and recommendations
+- Perform containment and remediation
+- Document the incident lifecycle
 
 ## Lab Environment
 
@@ -40,12 +43,15 @@ Wazuh Dashboard
       │
       ▼
 Privilege Escalation Detection
+      │
+      ▼
+Threat Hunting & Investigation
 ```
 
 ## Scenario
 
 A new local user account was created and subsequently granted administrative privileges.
-This simulated a privilege escalation attack path commonly used by threat actors to obtain elevated access within a compromised environment.
+This simulated a privilege escalation attack path where an attacker attempts to gain elevated permissions to perform administrative actions within an environment.
 
 ## Activity Performed
 
@@ -109,6 +115,7 @@ Rule ID: 60154
 Severity: 12
 MITRE Technique: T1484
 ```
+PowerShell verification confirmed that the account had been successfully granted administrative privileges.
 
 ### Evidence Reviewed
 
@@ -167,25 +174,6 @@ High
 - Apply least privilege principles.
 - Remove unnecessary local administrator accounts.
 
-## Skills Demonstrated
-
-### SOC Skills
-
-- SIEM Monitoring
-- Alert Triage
-- Threat Detection
-- Incident Investigation
-- Event Correlation
-- MITRE ATT&CK Mapping
-
-### Security Skills
-
-- Privilege Escalation Detection
-- Windows Security Monitoring
-- Identity and Access Management
-- Risk Assessment
-- Security Reporting
-
 ## Evidence
 
 ### User Creation Event
@@ -200,12 +188,68 @@ High
 
 <img width="1909" height="897" alt="Wazuh-Threat-Hunting" src="https://github.com/user-attachments/assets/c335c474-745c-48f0-bbea-8be4d7858978" />
 
+### Wazuh Alert Report
+
+[wazuh-alert-report.pdf](https://github.com/user-attachments/files/33360652/wazuh-alert-report.pdf)
+
+
+### Containment Actions
+Following detection, remediation actions were performed.
+
+## Remove Administrative Privileges
+net localgroup Administrators test-user1 /delete
+Verification:
+
+net localgroup Administrators
+Confirmed the account was no longer a member of the Administrators group.
+
+## Disable the Account
+net user test-user1 /active:no
+Verification:
+
+net user test-user1
+
+Confirmed:
+
+Account active               No
+
+<img width="767" height="772" alt="image" src="https://github.com/user-attachments/assets/b715d1e7-4680-4a6b-bda9-9df045280660" />
+
+### Remediation Outcome
+_Before Remediation_
+- User account created
+- User account modified
+- User added to Administrators group
+- Elevated privileges granted
+
+_After Remediation_
+- Administrative access removed
+- Account disabled
+- Privilege escalation contained
+
+## Skills Demonstrated
+
+### SOC Skills
+
+- SIEM Monitoring
+- Alert Triage
+- Threat Detection
+- Incident Investigation
+- Event Correlation
+- MITRE ATT&CK Mapping
+- Incident Response
+
+### Security Skills
+
+- Privilege Escalation Detection
+- Windows Security Monitoring
+- Identity and Access Management
+- Risk Assessment
+- Security Reporting
+
 ## Lessons Learned
 Privilege escalation activity generates multiple security events rather than a single alert.
 By correlating account creation, account modification and privileged group membership changes, a SOC analyst can identify suspicious privilege escalation behaviour and assess its potential impact.
 Monitoring privileged group changes is a critical detection capability because elevated privileges are a common objective for attackers.
 
-### Wazuh Report
-
-[wazuh-alert-report.pdf](https://github.com/user-attachments/files/33360652/wazuh-alert-report.pdf)
 
