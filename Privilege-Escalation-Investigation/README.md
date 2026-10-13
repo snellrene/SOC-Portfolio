@@ -193,25 +193,30 @@ High
 [wazuh-alert-report.pdf](https://github.com/user-attachments/files/33360652/wazuh-alert-report.pdf)
 
 
-### Containment Actions
+## Containment Actions
 Following detection, remediation actions were performed.
 
-## Remove Administrative Privileges
+### Remove Administrative Privileges
 net localgroup Administrators test-user1 /delete
+
 Verification:
 
 net localgroup Administrators
+
 Confirmed the account was no longer a member of the Administrators group.
 
-## Disable the Account
+### Disable the Account
 net user test-user1 /active:no
+
 Verification:
 
 net user test-user1
 
 Confirmed:
 
-Account active               No
+Account active             
+
+No
 
 <img width="767" height="772" alt="image" src="https://github.com/user-attachments/assets/b715d1e7-4680-4a6b-bda9-9df045280660" />
 
