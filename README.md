@@ -19,10 +19,6 @@ Develop SIEM and log-analysis skills
 Map security findings to the MITRE ATT&CK framework
 Document investigations using professional incident reports
 
-🔐 SOC Projects:
-
-1. https://github.com/snellrene/SOC-Portfolio/tree/main/Suspicious-login-investigation
-
 
 🚀 Continuous Learning
 
